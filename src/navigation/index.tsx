@@ -3,17 +3,19 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react'
 // 导入 page component 组件
-import HomePage from '../pages/HomePage/HomePage'
-import DetailPage from '../pages/DetailPage/DetailPage'
+import { HomePage,DetailPage,FloorPage } from './page'
+import { HomeOptions,FloorOptions } from './options'
 
-const Stack = createStackNavigator();
+const Stack:any = createStackNavigator();
+const { Navigator,Screen } = Stack;
 
 const StackRouter = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomePage} />
-            <Stack.Screen name="Detail" component={DetailPage} />
-        </Stack.Navigator>
+        <Navigator>
+            <Screen name="Home" component={HomePage} options={HomeOptions}/>
+            <Screen name="Detail" component={DetailPage} />
+            <Screen name="Floor" component={FloorPage} options={FloorOptions} />
+        </Navigator>
     )
 }
 

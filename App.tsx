@@ -5,11 +5,10 @@ import {
 
 import RouteContainer from './src/navigation/index'
 
-
 const App = () => {
 
   return (
-    <RouteContainer/>
+    <RouteContainer />
   );
 };
 
