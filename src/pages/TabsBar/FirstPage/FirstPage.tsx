@@ -1,5 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 const FirstPage:any = (props:any) => {
     const { navigation } = props
 
@@ -11,6 +13,7 @@ const FirstPage:any = (props:any) => {
         <>
             <View style={styles.container}>
                 <Text onPress={handleClick}>这里是第一个TabBar 导航</Text>
+                {/* <MaterialIcons  name={'home'} size={26} color="skyblue" /> */}
             </View>
         </>
     )

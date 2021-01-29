@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Alert, StyleSheet } from 'react-native'
-import {Icon} from '@ant-design/react-native'
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 export const HomeOptions = (route: any) => {
@@ -50,9 +50,19 @@ export const FloorOptions = () => {
 export const FirstOptions: any = (): any => {
     return {
         tabBarLabel: '首页',
-        // tabBarIcon: ({ color, size }) => (
-        //     <Icon name="account-book" size="md" color="red" />
-        // ),
-        tabBarBadge: 3,
+        tabBarIcon: ({ color, size }) => (
+            <Icon  name={'home'} size={26} color={color} />
+        ),
+        tabBarBadge: null,
+    }
+}
+
+export const SecondOptions: any = (): any => {
+    return {
+        tabBarLabel: '首页',
+        tabBarIcon: ({ color, size }) => (
+            <Icon  name={'handyman'} size={26} color={color} />
+        ),
+        tabBarBadge: null,
     }
 }
