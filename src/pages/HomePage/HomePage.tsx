@@ -8,7 +8,7 @@ const HomePage = (props: any) => {
         navigation.navigate(params)
     }
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor:"#fff" }}>
             <Text onPress={()=>handleClick('Detail')}>跳转到Detail页面</Text>
             <Text onPress={()=>handleClick('Floor')}>跳转到Floor页面</Text>
         </View>

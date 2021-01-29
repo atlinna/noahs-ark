@@ -1,21 +1,25 @@
 import React from 'react'
-import { View, Text,StyleSheet } from 'react-native'
-const FloorPage = () => {
+import { View, Text, StyleSheet } from 'react-native'
+const FloorPage = (props: any) => {
+    const { navigation } = props
+    const handleClick:any = () => {
+        navigation.goBack();
+    }
     return (
         <>
             <View style={styles.container}>
-                <Text>这是Floor页面</Text>
+                <Text onPress={handleClick}>这是Floor页面</Text>
             </View>
         </>
     )
 }
 
-const styles =StyleSheet.create({
-    container:{
-        flex:1,
-        backgroundColor:'#fff',
-        justifyContent:'center',
-        alignItems:'center',
+const styles:any = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 })
 
