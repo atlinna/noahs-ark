@@ -59,10 +59,16 @@ export const FirstOptions: any = (): any => {
 
 export const SecondOptions: any = (): any => {
     return {
-        tabBarLabel: '首页',
+        tabBarLabel: '其他',
         tabBarIcon: ({ color, size }) => (
             <Icon  name={'handyman'} size={26} color={color} />
         ),
         tabBarBadge: null,
+    }
+}
+
+export const DrawerOptions:any = ():any=>{
+    return {
+        title:'Noash-Ark'
     }
 }
