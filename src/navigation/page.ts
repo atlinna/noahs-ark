@@ -7,7 +7,7 @@ import DrawerOne from '../pages/DrawerPage/DrawerPageOne'
 import DrawerTwo from '../pages/DrawerPage/DrawerPageTwo'
 import DrawerThree from '../pages/DrawerPage/DrawerPageThree'
 import DrawerFour from '../pages/DrawerPage/DrawerPageFour'
-
+import AnimateOne from '../pages/Animate/AnimateOne'
 
 export {
     HomePage,
@@ -19,4 +19,5 @@ export {
     DrawerTwo,
     DrawerThree,
     DrawerFour,
+    AnimateOne,
 }

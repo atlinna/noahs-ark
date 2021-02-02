@@ -21,12 +21,17 @@ const FirstPage: any = (props: any) => {
             params: { message: 'hello 这里是测试redux参数传递' }
         })
     }, [])
+
+    const handleAnimatePage = ():void =>{
+        navigation.navigate('AnimateOne')
+    }
     return (
         <>
             <View style={styles.container}>
                 <Text>{mes}</Text>
                 <Text onPress={handleClick}>这里是第一个TabBar 导航</Text>
                 <Button title="测试redux" onPress={handleBtnClick} />
+                <Button title="测试动画" onPress={handleAnimatePage} />
             </View>
         </>
     )
@@ -40,12 +45,6 @@ const styles: any = StyleSheet.create({
         alignItems: 'center'
     }
 })
-
-const mapStateToProps: any = (state: any): object => {
-    return {
-        ...state
-    }
-}
 
 export default connect(({ counter }: any) => {
     return { counter }

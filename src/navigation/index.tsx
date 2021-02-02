@@ -5,7 +5,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import React from 'react'
 // 导入 page component 组件
-import { HomePage, DetailPage, FloorPage, DrawerOne, DrawerTwo, DrawerThree, DrawerFour } from './page'
+import {
+    HomePage,
+    DetailPage,
+    FloorPage,
+    DrawerOne,
+    DrawerTwo,
+    DrawerThree,
+    DrawerFour,
+    AnimateOne,
+} from './page'
 import { HomeOptions, FloorOptions, DrawerOptions } from './options'
 // 导入 tabbar page 组件
 // import TabRouter from './tabs'
@@ -28,6 +37,7 @@ const StackRouter = () => {
             <Screen name="DrawerTwo" component={DrawerTwo} />
             <Screen name="DrawerThree" component={DrawerThree} />
             <Screen name="DrawerFour" component={DrawerFour} />
+            <Screen name="AnimateOne" component={AnimateOne}  />
         </Navigator>
     )
 }
