@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import Tabs from '../../components/Tabs/tabs'
+import SwiperLine from '../../components/SwiperLine/SwiperLine'
 
 const tabList = [
     {name:'tab-1',current:'tab1',id:1},
@@ -12,7 +13,11 @@ const IndexPage: any = () => {
     return (
         <>
                 <Tabs tabList={tabList}>
-                    <View style={styles.box}><Text>页面 ---- 1</Text></View>
+                    <View style={styles.box}>
+                        <SwiperLine/>
+                        <SwiperLine/>
+                        <SwiperLine/>
+                    </View>
                     <View style={styles.box}><Text>页面 ---- 2</Text></View>
                     <View style={styles.box}><Text>页面 ---- 3</Text></View>
                 </Tabs>
